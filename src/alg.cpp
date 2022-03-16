@@ -29,7 +29,7 @@ int cbinsearch(int *arr, int size, int crit, int value) {
   int r = size - 1;
   int mid;
   while (l <= r) {
-    mid = (l + r) / 2;
+    mid = l + (l + r) / 2;
     if (arr[mid] == value) {
       int m = mid;
       while (arr[mid] == value) {
