@@ -33,7 +33,7 @@ int cbinsearch(int *arr, int size, int crit, int value) {
     if (arr[mid] == value && mid != crit) {
       count++;
       int m1 = mid, m2 = mid;
-      while (arr[--m1] == value && m1>crit) {
+      while (arr[--m1] == value && m1 > crit) {
         count++;
       }
       while (arr[++m2] == value) {
